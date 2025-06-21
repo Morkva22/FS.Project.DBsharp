@@ -1,17 +1,13 @@
 USE master
-GO
+GO;
 
--- Drop database if it exists (Удаление базы данных если она существует)
 IF DB_ID('InventoryManagement') IS NOT NULL
     DROP DATABASE InventoryManagement
-GO
-
-CREATE DATABASE InventoryManagement
-GO
+IF DB_ID('InventoryManagement') IS NULL
+    CREATE DATABASE InventoryManagement
 
 USE InventoryManagement
 GO
-
 --------------------- TABLES ---------------------
 
 -- Stores product categories (Таблица категорий товаров)

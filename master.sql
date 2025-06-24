@@ -929,3 +929,4 @@ VALUES
 ('cashier', CONVERT(NVARCHAR(128), HASHBYTES('SHA2_256', 'cashier123'), 2), 'cashier@inventory.com', 'Anna Cashier', 'Cashier', 1),
 ('warehouse', CONVERT(NVARCHAR(128), HASHBYTES('SHA2_256', 'warehouse123'), 2), 'warehouse@inventory.com', 'Peter Warehouse', 'Warehouse', 1);
 
+
